@@ -18,7 +18,7 @@ const EmojiSpan = styled('tspan')({
     "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
 });
 
-const Messages = ({ degF, degC, weatherEmoji, psTime, day }) => (
+const Messages = ({ degF, degC, weatherEmoji, day }) => (
   <g transform="translate(10, 0)">
     <Message>
       <rect width="120" height="42" rx="18.0355" />

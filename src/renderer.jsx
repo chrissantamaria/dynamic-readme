@@ -51,13 +51,7 @@ const renderContent = () => {
       */}
       <style>{STYLES_KEY}</style>
       <style>{styles}</style>
-      <Messages
-        degF="80"
-        degC="20"
-        weatherEmoji="🌦️"
-        psTime="2 years"
-        day={day}
-      />
+      <Messages degF="80" degC="20" weatherEmoji="🌦️" day={day} />
     </RootContainer>
   );
 
