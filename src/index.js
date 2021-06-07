@@ -1,22 +1,23 @@
+import getWeatherData from './getWeatherData';
 import renderContent from './renderer';
 
-addEventListener('fetch', (event) => {
+const eventHandler = async () => {
   const day = new Intl.DateTimeFormat('en-US', {
     weekday: 'long',
     timeZone: 'America/New_York',
   }).format(new Date());
 
-  const content = renderContent({
-    day,
-    degF: '80',
-    degC: '20',
-    weatherEmoji: '🌦️',
-  });
+  const { tempF, tempC } = await getWeatherData();
 
-  const res = new Response(content, {
+  const content = renderContent({ day, tempF, tempC });
+
+  return new Response(content, {
     headers: {
       'content-type': 'image/svg+xml',
     },
   });
-  event.respondWith(res);
+};
+
+addEventListener('fetch', (event) => {
+  event.respondWith(eventHandler(event));
 });

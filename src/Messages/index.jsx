@@ -18,7 +18,7 @@ const EmojiSpan = styled('tspan')({
     "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
 });
 
-const Messages = ({ degF, degC, weatherEmoji, day }) => (
+const Messages = ({ tempF, tempC, day }) => (
   <g transform="translate(10, 0)">
     <Message>
       <rect width="120" height="42" rx="18.0355" />
@@ -27,13 +27,12 @@ const Messages = ({ degF, degC, weatherEmoji, day }) => (
       </text>
     </Message>
     <Message offsetY={48} delay={2.5}>
-      <rect width="318" height="66.1302" rx="18.0355" />
+      <rect width="311" height="66.1302" rx="18.0355" />
       <text x="15" y="27">
-        I live in St. Petersburg, Florida where it’s
+        I live in Saint Petersburg, Florida where
       </text>
       <text x="15" y="50">
-        currently {degF} °F ({degC} °C) and{' '}
-        <EmojiSpan>{weatherEmoji}</EmojiSpan>
+        it’s currently {tempF} °F ({tempC} °C).
       </text>
     </Message>
     <Message offsetY={120} delay={5}>

@@ -3,6 +3,8 @@ type = "javascript"
 account_id = ""
 workers_dev = true
 
+vars = { WEATHER_API_KEY = "" }
+
 [build]
 command = "yarn build"
 [build.upload]

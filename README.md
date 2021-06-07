@@ -25,7 +25,9 @@ yarn global add @cloudflare/wrangler
 wrangler login
 ```
 
-Copy `wrangler.template.toml` to a new `wrangler.toml` file and fill with your `account_id`.
+Obtain a key from [Weather API](https://www.weatherapi.com/) (free tier allows 1,000,000 requests / month).
+
+Copy `wrangler.template.toml` to a new `wrangler.toml` file and fill with your `account_id` and `WEATHER_API_KEY`.
 
 Install dependencies:
 
@@ -47,7 +49,7 @@ wrangler publish
 
 # Todo:
 
-- [ ] Fetch live weather data instead of mock
+- [ ] Map weather data to visually-friendly emoji
 - [ ] Cache responses in CloudFlare CDN with TTL
 - [ ] Add error monitoring (Slack? Sentry?) to deployed Worker
 - [ ] Fix Goober `keyframes` not properly injecting
