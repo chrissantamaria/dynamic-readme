@@ -2,7 +2,7 @@ import { h } from 'preact';
 import renderToString from 'preact-render-to-string';
 import { setup as setupGoober, styled, extractCss } from 'goober';
 
-import Messages from './Messages';
+import Messages from './components/Messages';
 // ESBuild imports this as text for easy inlining
 import styles from './styles.css';
 
