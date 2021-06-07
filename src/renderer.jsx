@@ -32,6 +32,10 @@ const RootContainer = styled('svg')({
 });
 
 const renderContent = () => {
+  const day = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(
+    new Date()
+  );
+
   const content = renderToString(
     <RootContainer
       width="550"
@@ -52,7 +56,7 @@ const renderContent = () => {
         degC="20"
         weatherEmoji="🌦️"
         psTime="2 years"
-        day="Monday"
+        day={day}
       />
     </RootContainer>
   );
