@@ -1,0 +1,22 @@
+{
+  "name": "dynamic-readme",
+  "version": "1.0.0",
+  "author": "Chris Santamaria <chris@santamaria.me>",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "./scripts/build.js",
+    "format": "prettier --write '**/*.{js,jsx,css,json,md}'"
+  },
+  "dependencies": {
+    "goober": "^2.0.37",
+    "preact": "^10.5.13",
+    "preact-render-to-string": "^5.1.19"
+  },
+  "devDependencies": {
+    "cssnano": "^5.0.5",
+    "estrella": "^1.4.1",
+    "postcss": "^8.3.0",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2"
+  }
+}

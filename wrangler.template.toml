@@ -1,0 +1,9 @@
+name = "dynamic-readme"
+type = "javascript"
+account_id = ""
+workers_dev = true
+
+[build]
+command = "yarn build"
+[build.upload]
+format = "service-worker"
