@@ -1,9 +1,10 @@
 import renderContent from './renderer';
 
 addEventListener('fetch', (event) => {
-  const day = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(
-    new Date()
-  );
+  const day = new Intl.DateTimeFormat('en-US', {
+    weekday: 'long',
+    timeZone: 'America/New_York',
+  }).format(new Date());
 
   const content = renderContent({
     day,
