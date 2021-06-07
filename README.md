@@ -48,5 +48,6 @@ wrangler publish
 # Todo:
 
 - [ ] Fetch live weather data instead of mock
-- [ ] Display current day instead of mock
 - [ ] Cache responses in CloudFlare CDN with TTL
+- [ ] Add error monitoring (Slack? Sentry?) to deployed Worker
+- [ ] Fix Goober `keyframes` not properly injecting
