@@ -1,4 +1,4 @@
-import { h } from 'preact';
+import { h, Fragment } from 'preact';
 import { styled } from 'goober';
 
 import Message from './Message';
@@ -19,7 +19,7 @@ const EmojiSpan = styled('tspan')({
 });
 
 const Messages = ({ tempF, tempC, day }) => (
-  <g transform="translate(10, 0)">
+  <>
     <Message>
       <rect width="120" height="42" rx="18.0355" />
       <text x="15" y="27">
@@ -68,7 +68,7 @@ const Messages = ({ tempF, tempC, day }) => (
         Have a great {day}! <EmojiSpan>👋</EmojiSpan>
       </text>
     </Message>
-  </g>
+  </>
 );
 
 export default Messages;
