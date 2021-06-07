@@ -1,5 +1,6 @@
 {
   "name": "dynamic-readme",
+  "description": "Code powering the animated chat bubble README on my GitHub profile",
   "version": "1.0.0",
   "author": "Chris Santamaria <chris@santamaria.me>",
   "main": "dist/index.js",
