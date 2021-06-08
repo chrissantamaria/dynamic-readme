@@ -50,6 +50,5 @@ wrangler publish
 # Todo:
 
 - [ ] Map weather data to visually-friendly emoji
-- [ ] Cache responses in CloudFlare CDN with TTL
 - [ ] Add error monitoring (Slack? Sentry?) to deployed Worker
 - [ ] Fix Goober `keyframes` not properly injecting

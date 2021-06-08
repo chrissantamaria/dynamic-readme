@@ -14,6 +14,7 @@ const eventHandler = async () => {
   return new Response(content, {
     headers: {
       'content-type': 'image/svg+xml',
+      'cache-control': 'max-age=3600',
     },
   });
 };
