@@ -34,9 +34,9 @@ const RootContainer = styled('svg')({
 const renderContent = (props) => {
   const content = renderToString(
     <RootContainer
-      width="550"
+      width="460"
       height="380"
-      viewBox="0 0 550 380"
+      viewBox="0 0 460 380"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
