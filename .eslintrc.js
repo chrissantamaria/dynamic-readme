@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint:recommended', 'preact', 'plugin:prettier/recommended'],
+  extends: ['preact', 'plugin:prettier/recommended'],
   overrides: [
     {
       files: ['*.jsx', '*.js'],
