@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-const rimraf = require('rimraf');
 const { build } = require('esbuild');
 const fs = require('fs').promises;
 const postcss = require('postcss');
@@ -9,8 +8,6 @@ const cssMinifier = postcss([
     preset: 'default',
   }),
 ]);
-
-rimraf.sync('dist');
 
 build({
   entryPoints: ['src/index.js'],
