@@ -38,12 +38,12 @@ const Messages = ({ tempF, tempC, day }) => (
       </text>
     </Message>
     <Message offsetY={120} delay={5}>
-      <rect width="334" height="66.1302" rx={RECT_RX} />
+      <rect width="342" height="66.1302" rx={RECT_RX} />
       <text x="15" y="27">
         I’m a frontend software engineer currently
       </text>
       <text x="15" y="50">
-        making stuff at Tinder, previously at Lyft.
+        making stuff at Figma, previously at Tinder.
       </text>
     </Message>
     <Message offsetY={192} delay={7.5}>
