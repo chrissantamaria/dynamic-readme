@@ -1,11 +1,9 @@
 name = "dynamic-readme"
-type = "javascript"
-account_id = ""
-workers_dev = true
+compatibility_date = "2022-05-27"
+
+main = "./dist/index.js"
 
 vars = { WEATHER_API_KEY = "" }
 
 [build]
-command = "yarn build"
-[build.upload]
-format = "service-worker"
+  command = "yarn build"
