@@ -17,11 +17,11 @@
   },
   "devDependencies": {
     "cssnano": "^5.0.5",
+    "esbuild": "^0.14.39",
     "eslint": "^7.28.0",
     "eslint-config-preact": "^1.1.4",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "estrella": "^1.4.1",
     "postcss": "^8.3.0",
     "prettier": "^2.3.1",
     "rimraf": "^3.0.2",

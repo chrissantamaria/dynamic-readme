@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const rimraf = require('rimraf');
-const { build } = require('estrella');
+const { build } = require('esbuild');
 const fs = require('fs').promises;
 const postcss = require('postcss');
 
@@ -13,7 +13,7 @@ const cssMinifier = postcss([
 rimraf.sync('dist');
 
 build({
-  entry: 'src/index.js',
+  entryPoints: ['src/index.js'],
   outfile: 'dist/index.js',
   bundle: true,
   jsxFactory: 'h',
@@ -38,4 +38,6 @@ build({
       },
     },
   ],
+}).catch(() => {
+  process.exit(1);
 });
