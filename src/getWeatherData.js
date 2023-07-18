@@ -1,5 +1,5 @@
-// City center of Saint Petersburg, FL
-const LOCATION = '27.767599, -82.640213';
+// Center of East Village in NY
+const LOCATION = '40.726155, -73.981892';
 
 const WEATHER_API_URL = 'http://api.weatherapi.com/v1/current.json';
 

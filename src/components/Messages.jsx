@@ -29,9 +29,9 @@ const Messages = ({ tempF, tempC, day }) => (
       </text>
     </Message>
     <Message offsetY={48} delay={2.5}>
-      <rect width="311" height="66.1302" rx={RECT_RX} />
+      <rect width="232" height="66.1302" rx={RECT_RX} />
       <text x="15" y="27">
-        I live in Saint Petersburg, Florida where
+        I live in New York, NY where
       </text>
       <text x="15" y="50">
         it’s currently {tempF} °F ({tempC} °C).
