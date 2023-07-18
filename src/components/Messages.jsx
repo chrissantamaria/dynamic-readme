@@ -47,9 +47,9 @@ const Messages = ({ tempF, tempC, day }) => (
       </text>
     </Message>
     <Message offsetY={192} delay={7.5}>
-      <rect width="286" height="66.1302" rx={RECT_RX} />
+      <rect width="260" height="66.1302" rx={RECT_RX} />
       <text x="15" y="27">
-        I'm also studying computer science
+        I also studied computer science
       </text>
       <text x="15" y="50">
         at the University of Virginia.
